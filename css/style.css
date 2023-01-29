@@ -1,54 +1,53 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px dotted red;
+    border: none;
 }
 
-body{
-    background-color: green;
+body {
     height: 100vh;
     width: 100%;
+    font-family: sans-serif;
 }
 
 /*---------------------------------------------------------main--------------------------------------------*/
 
-.container-centered{
+.container-centered {
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
 }
 
-main{
+main {
     height: calc(100vh - 56px);
-    background-color: yellow;
+    background-color: black;
 }
 
-#container-bottoni-sopra{
-    margin-top: 4px;
+#container-bottoni-sopra {
     display: flex;
     justify-content: flex-end;
     gap: 5px;
+    margin-right: 4px;
 }
 
-.bottoni-sopra{
-    height: 15px;
-    background-color: gray;
+.bottoni-sopra {
+    background-color: #4B4840;
+    color: white;
+    font-size: 0.7em;
+    padding: 2px;
+    border-radius: 3px;
+    margin-top: 4px;
 }
 
-#speaker-view{
-    width: 40px;
+#allarga {
+    width: 17.5px;
 }
 
-#allarga{
-    width: 15px;
-}
-
-#schermi{
+#schermi {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color: blueviolet;
     height: 86%;
     margin-top: 3.5%;
     display: flex;
@@ -56,32 +55,33 @@ main{
     gap: 6px;
 }
 
-.row-schermi{
+.row-schermi {
     display: flex;
     flex-direction: row;
-    gap:4px;
+    gap: 4px;
 }
 
-.schermo{
-width: calc(100% / 7);
-background-color: aqua;
-height: 88px;
-position: relative;
+.schermo {
+    width: calc(100% / 7);
+    background-image: url("https://picsum.photos/200/88");
+    height: 88px;
+    position: relative;
 }
 
-.utente{
+.utente {
     position: absolute;
     bottom: 1px;
     left: 0;
-    height: 16px;
-    min-width: 50px;
-    background-color: greenyellow;
+    background-color: #4B4840;
     opacity: 80%;
+    color: white;
+    font-size: 0.7em;
+    padding: 3px;
 }
 
 /*--------------------------------------------------------footer---------------------------------------------------*/
 
-footer{
+footer {
     background-color: #222222;
     height: 56px;
     display: flex;
@@ -90,25 +90,62 @@ footer{
     gap: 4px;
 }
 
-#blocco-foot-sx, #blocco-foot-centro, #end-meeting{
-    display: inline;
+#blocco-foot-sx,
+#blocco-foot-centro,
+#end-meeting {
+    display: flex;
+    flex-direction: row;
     height: 100%;
     min-width: 50px;
-    background-color: orange;
+    gap: 12px;
 }
 
-.bottone-scritta{
-    display: inline-block;
-    background-color: darkgreen;
-    min-width: 20px;
-    height: calc(100% - 8px);
-    margin-top: 4px;
+#blocco-foot-sx,
+#blocco-foot-centro {
+    padding-bottom: 3px;
 }
 
-.bottone-freccia{
-    background-color: orangered;
-    display: inline-block;
-    min-width: 10px;
+#blocco-foot-sx {
+    margin-left: 12px;
+}
+
+.bottone-scritta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222222;
     height: calc(100% - 8px);
     margin-top: 4px;
+    color: white;
+}
+
+.bottone-scritta i {
+    height: 80%;
+    font-size: 1.35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comando {
+    font-size: 0.8em;
+}
+
+.bottone-freccia {
+    background-color: #222222;
+    font-size: 0.5em;
+    height: calc(100% - 8px);
+    margin-top: 4px;
+    color: white;
+}
+
+#end-meeting {
+    color: red;
+    font-size: 0.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #4A4A4A;
 }
